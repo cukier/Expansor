@@ -19,23 +19,17 @@ int main(void) {
 
 	int cont = 0;
 	int ack = 0;
-	int reg[255];
+	int achados;
+	int reg[127];
 
-	while (TRUE) {
-		ack = hand_shake(mcp_r);
-		if (ack) {
-			ack = 0;
-			for (cont = 0; cont < 255; ++cont) {
-				reg[cont] = read_i2c(mcp_r, cont);
-				delay_ms(10);
-			}
-			for (cont = 0; cont < 255; ++cont)
-				printf("reg %3u = %3u\n\r", cont, reg[cont]);
-		} else {
-			printf("\fErro");
+	for (cont = 0; cont < 254; cont += 2) {
+		delay_ms(10);
+		if (hand_shake(cont)) {
+			printf("achado 0x%x\n\r", cont);
 		}
-		delay_ms(1000);
 	}
+
+	printf("Vasculhados %u\n\r", cont / 2);
 
 	return 0;
 }

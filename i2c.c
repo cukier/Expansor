@@ -12,7 +12,7 @@ int hand_shake(int addrDevice) {
 	ack = i2c_write(addrDevice);
 	i2c_stop();
 
-	return ack ? 0 : 1;
+	return !ack;
 }
 
 int send_i2c(int addrDevice, int addrMemory) {
