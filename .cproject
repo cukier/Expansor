@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="0.331316917">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.331316917" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<macros>
+					<stringListMacro name="Path" type="VALUE_TEXT_LIST">
+						<value name="C:/Program Files (x86)/Java/jre1.8.0_25/bin/client"/>
+						<value name="C:/Program Files (x86)/Java/jre1.8.0_25/bin"/>
+						<value name="C:/Program Files (x86)/Java/jre1.8.0_25/lib/i386"/>
+						<value name="C:\ProgramData\Oracle\Java\javapath"/>
+						<value name="C:\Windows\system32"/>
+						<value name="C:\Windows"/>
+						<value name="C:\Windows\System32\Wbem"/>
+						<value name="C:\Windows\System32\WindowsPowerShell\v1.0\"/>
+						<value name="C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\"/>
+						<value name="C:\Program Files\Microsoft SQL Server\100\Tools\Binn\"/>
+						<value name="C:\Program Files\Microsoft SQL Server\100\DTS\Binn\"/>
+						<value name="C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\"/>
+						<value name="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\"/>
+						<value name="C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One Integration\IntegrationServer\Tomcat\webapps\B1iXcellerator\WEB-INF\lib"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One DI API\JCO\LIB\"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One DI API\DI API 90"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One ServerTools\System Landscape Directory\tomcat\bin"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One ServerTools\Common\sapjvm_6\jre\bin\server"/>
+						<value name="C:\Program Files\SAP\SAP Business One DI API\JCO\LIB\"/>
+						<value name="C:\Program Files\SAP\SAP Business One DI API\DI API 90"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One\"/>
+						<value name="C:\MinGW\bin"/>
+						<value name="C:\MinGW\msys\1.0"/>
+						<value name="C:\MinGW\msys\1.0\bin"/>
+						<value name="C:\Program Files (x86)\pk2cmd"/>
+						<value name="C:\PICC"/>
+						<value name="C:\Users\Administrador\Desktop\eclipse"/>
+					</stringListMacro>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="0.331316917" name="Default" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.331316917." name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.876309481" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
+							<targetPlatform id="org.eclipse.cdt.build.core.prefbase.toolchain.876309481.345807793" name=""/>
+							<builder id="org.eclipse.cdt.build.core.settings.default.builder.171260124" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.965619954" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1010302358" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.717041445" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.814730544" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.217304975" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.932369212" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1424242306" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\PICC\Devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\PICC\Drivers&quot;"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.58978437" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="0.331316917.1849453162">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.331316917.1849453162" moduleId="org.eclipse.cdt.core.settings" name="Burn">
+				<macros>
+					<stringListMacro name="Path" type="VALUE_TEXT_LIST">
+						<value name="C:/Program Files (x86)/Java/jre1.8.0_25/bin/client"/>
+						<value name="C:/Program Files (x86)/Java/jre1.8.0_25/bin"/>
+						<value name="C:/Program Files (x86)/Java/jre1.8.0_25/lib/i386"/>
+						<value name="C:\ProgramData\Oracle\Java\javapath"/>
+						<value name="C:\Windows\system32"/>
+						<value name="C:\Windows"/>
+						<value name="C:\Windows\System32\Wbem"/>
+						<value name="C:\Windows\System32\WindowsPowerShell\v1.0\"/>
+						<value name="C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\"/>
+						<value name="C:\Program Files\Microsoft SQL Server\100\Tools\Binn\"/>
+						<value name="C:\Program Files\Microsoft SQL Server\100\DTS\Binn\"/>
+						<value name="C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\"/>
+						<value name="C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\"/>
+						<value name="C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One Integration\IntegrationServer\Tomcat\webapps\B1iXcellerator\WEB-INF\lib"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One DI API\JCO\LIB\"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One DI API\DI API 90"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One ServerTools\System Landscape Directory\tomcat\bin"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One ServerTools\Common\sapjvm_6\jre\bin\server"/>
+						<value name="C:\Program Files\SAP\SAP Business One DI API\JCO\LIB\"/>
+						<value name="C:\Program Files\SAP\SAP Business One DI API\DI API 90"/>
+						<value name="C:\Program Files (x86)\SAP\SAP Business One\"/>
+						<value name="C:\MinGW\bin"/>
+						<value name="C:\MinGW\msys\1.0"/>
+						<value name="C:\MinGW\msys\1.0\bin"/>
+						<value name="C:\Program Files (x86)\pk2cmd"/>
+						<value name="C:\PICC"/>
+						<value name="C:\Users\Administrador\Desktop\eclipse"/>
+					</stringListMacro>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="0.331316917.1849453162" name="Burn" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.331316917.1849453162." name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.976354863" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
+							<targetPlatform id="org.eclipse.cdt.build.core.prefbase.toolchain.976354863.2007811103" name=""/>
+							<builder id="org.eclipse.cdt.build.core.settings.default.builder.2075576140" incrementalBuildTarget="Burn" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.1443020502" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1995752073" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1077183874" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.790752702" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.259392991" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.68619811" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.133573555" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\PICC\Devices&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\PICC\Drivers&quot;"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.47396471" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Elevador.null.1288787333" name="Elevador"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="0.331316917">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Master"/>
+		<configuration configurationName="Burn">
+			<resource resourceType="PROJECT" workspacePath="/Elevador"/>
+		</configuration>
+		<configuration configurationName="Slave"/>
+		<configuration configurationName="Burn Master"/>
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/Elevador"/>
+		</configuration>
+	</storageModule>
+</cproject>
