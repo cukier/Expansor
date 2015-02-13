@@ -1,7 +1,7 @@
 D G "__PCH__" 0 0 ""5.008""
 D G "__DEVICE__" 0 0 ""
 D G "__DATE__" 0 0 ""13-fev-15""
-D G "__TIME__" 0 0 ""10:09:07"" "* expansor.c"
+D G "__TIME__" 0 0 ""11:17:45"" "* expansor.c"
 c L "set_tris_a" 0 1 1 "*"
 c L "set_tris_a" 0 1 1 "*"
 c L "set_tris_a" 1 1 17 "FUNCTION"
@@ -767,28 +767,27 @@ d G "INT_LOWVOLT" 1 646 "0x00A004"
 d G "INT_EEPROM" 1 647 "0x00A010"
 C L "jump_to_irs" 2 1 1 "*"
 C L "jump_to_irs" 2 1 1 "*"
-C L "jump_to_irs" 2 1 1 "*"
-V L "addrDevice" 2 8 "int8" `611 
-F G "hand_shake" 2 8 "int8(int8 addrDevice)" `610 
-V L "ack" 2 9 "int8" `612 
-V L "addrDevice" 2 18 "int8" `614 
-V L "addrMemory" 2 18 "int8" `615 
-F G "send_i2c" 2 18 "int8(int8 addrDevice,int8 addrMemory)" `613 
-V L "ack" 2 19 "int8" `616 
-V L "addrDevice" 2 29 "int8" `618 
-V L "addrMemory" 2 29 "int8" `619 
-F G "read_i2c" 2 29 "int8(int8 addrDevice,int8 addrMemory)" `617 
-V L "recived" 2 31 "int8" `620 
-V L "devices" 2 41 "*int8" `622 
-F G "scan" 2 41 "int8(*int8 devices)" `621 
-V L "cont" 2 42 "int8" `623 
-V L "ack" 2 43 "int8" `624 
-V L "found" 2 44 "int8" `625 
-V L "addrDevice" 2 56 "int8" `627 
-V L "regs" 2 56 "*int8" `628 
-F G "get_registers" 2 56 "int8(int8 addrDevice,*int8 regs)" `626 
-V L "cont" 2 57 "int8" `629 
-V L "ack" 2 58 "int8" `630 
+D G "latencia" 2 8 "10"
+V L "addrDevice" 2 10 "int8" `611 
+F G "hand_shake" 2 10 "int8(int8 addrDevice)" `610 
+V L "ack" 2 12 "int8" `612 
+V L "addrDevice" 2 21 "int8" `614 
+V L "addrMemory" 2 21 "int8" `615 
+F G "send_i2c" 2 21 "int8(int8 addrDevice,int8 addrMemory)" `613 
+V L "ack" 2 23 "int8" `616 
+V L "addrDevice" 2 33 "int8" `618 
+V L "addrMemory" 2 33 "int8" `619 
+F G "read_i2c" 2 33 "int8(int8 addrDevice,int8 addrMemory)" `617 
+V L "recived" 2 35 "int8" `620 
+V L "devices" 2 45 "*int8" `622 
+F G "scan" 2 45 "int8(*int8 devices)" `621 
+V L "cont" 2 47 "int8" `623 
+V L "ack" 2 48 "int8" `624 
+V L "found" 2 49 "int8" `625 
+V L "addrDevice" 2 61 "int8" `627 
+V L "regs" 2 61 "*int8" `628 
+F G "get_registers" 2 61 "int8(int8 addrDevice,*int8 regs)" `626 
+V L "cont" 2 63 "int8" `629 
 C G "" 3 1 1 "*"
 C G "" 3 1 1 "*"
 D G "mcp_r" 3 9 "0x40"
@@ -814,14 +813,14 @@ D G "gpioa" 3 29 "0x12"
 D G "gpiob" 3 30 "0x13"
 D G "olata" 3 31 "0x14"
 D G "olatb" 3 32 "0x15"
-D G "qtdDevices" 0 18 "3"
+D G "qtdDevices" 0 18 "5"
 D G "qtdRegs" 0 19 "255"
-F G "MAIN" 0 21 "int8()" `631 
-V L "devices" 0 23 "int8[3]" `632 
-V L "regs" 0 24 "int8[3][255]" `633 
-V L "qtd" 0 25 "int8" `635 
-V L "cont" 0 26 "int8" `636 
-V L "cont2" 0 27 "int8" `637 
+F G "MAIN" 0 21 "int8()" `630 
+V L "devices" 0 23 "int8[5]" `631 
+V L "regs" 0 24 "int8[5][255]" `632 
+V L "qtd" 0 25 "int8" `634 
+V L "cont" 0 26 "int8" `635 
+V L "cont2" 0 27 "int8" `636 
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0

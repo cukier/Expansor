@@ -15,7 +15,7 @@
 #include "i2c.c"
 #include "mcp23017.c"
 
-#define qtdDevices	3
+#define qtdDevices	5
 #define qtdRegs		255
 
 int main(void) {
@@ -28,14 +28,25 @@ int main(void) {
 
 	qtd = scan(&devices);
 
-	printf("\n\rEncontrados %u\n\r", qtd);
+	if (qtd > qtdDevices) {
+		printf("\n\rMuitos dispoisitivos %d\n\r", qtd);
+		return 1;
+	}
+
+	printf("\n\rEncontrados %u\n\rDisp\t", qtd);
 
 	for (cont = 0; cont < qtd; ++cont) {
 		get_registers(devices[cont], regs[cont]);
-		for (cont2 = 0; cont2 < qtdRegs; ++cont2) {
-			printf("disp 0x%x reg 0x%x = 0x%x\r\n", devices[cont], cont2,
-					regs[cont][cont2]);
-		}
+		printf("  0x%x", devices[cont]);
+	}
+
+	printf("\n\r");
+
+	for (cont = 0; cont < qtdRegs; ++cont) {
+		printf("reg 0x%x  ", cont);
+		for (cont2 = 0; cont2 < qtd; ++cont2)
+			printf("0x%x  ", regs[cont][cont2]);
+		printf("\n\r");
 	}
 
 	return 0;
