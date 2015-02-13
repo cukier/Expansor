@@ -15,38 +15,24 @@
 #include "i2c.c"
 #include "mcp23017.c"
 
-#define qtdDevices	5
-#define qtdRegs		255
-
 int main(void) {
 
-	int devices[qtdDevices];
-	int regs[qtdDevices][qtdRegs];
-	int qtd = 0;
-	int cont;
-	int cont2;
+	int i = 0;
 
-	qtd = scan(&devices);
+	int iodir = read_i2c(mcp_r, iodira);
+	printf("0x%x\n\r", read_i2c(mcp_r, iodira));
 
-	if (qtd > qtdDevices) {
-		printf("\n\rMuitos dispoisitivos %d\n\r", qtd);
-		return 1;
-	}
+	if (iodir == 0xFF)
+		write_i2c(mcp_r, iodira, all_out);
+	printf("0x%x\n\r", read_i2c(mcp_r, iodira));
 
-	printf("\n\rEncontrados %u\n\rDisp\t", qtd);
+	while (true) {
+		for (i = 1; i != 8; i <<= 1) {
+			write_i2c(mcp_r, gpioa, i);
+			printf("0x%x\n\r", read_i2c(mcp_r, gpioa));
+			delay_ms(1000);
+		}
 
-	for (cont = 0; cont < qtd; ++cont) {
-		get_registers(devices[cont], regs[cont]);
-		printf("  0x%x", devices[cont]);
-	}
-
-	printf("\n\r");
-
-	for (cont = 0; cont < qtdRegs; ++cont) {
-		printf("reg 0x%x  ", cont);
-		for (cont2 = 0; cont2 < qtd; ++cont2)
-			printf("0x%x  ", regs[cont][cont2]);
-		printf("\n\r");
 	}
 
 	return 0;

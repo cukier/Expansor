@@ -30,3 +30,6 @@
 #define gpiob		0x13
 #define olata		0x14
 #define olatb		0x15
+
+#define all_in		0xFF
+#define all_out		0x00
