@@ -37,3 +37,34 @@ int read_i2c(int addrDevice, int addrMemory) {
 
 	return recived;
 }
+
+int scan(int *devices) {
+	int cont = 0;
+	int ack = 0;
+	int found = 0;
+
+	for (cont = 2; cont < 254; cont += 2) {
+		delay_ms(10);
+		if (hand_shake(cont)) {
+			devices[found++] = cont;
+		}
+	}
+
+	return found;
+}
+
+int get_registers(int addrDevice, int *regs) {
+	int cont = 0;
+	int ack = 0;
+
+	for (cont = 0; cont < sizeof(regs); ++cont) {
+		delay_ms(10);
+		ack = hand_shake(addrDevice);
+		if (ack)
+			regs[cont] = read_i2c(addrDevice, cont);
+		else
+			regs[cont] = 0xFF;
+	}
+
+	return cont;
+}
